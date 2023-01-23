@@ -2,13 +2,18 @@
 A small demonstration integrating stencil buffers and virtual reality, which allows the user to engage in impossible spaces.
 
 ## Showcase:
-https://user-images.githubusercontent.com/33844493/214108688-31806d77-4a9d-44ff-a509-1ff5f0f56a6a.mp4
+https://user-images.githubusercontent.com/33844493/214150369-1d5419df-7c9d-48f1-a441-2e1d59aebec6.mp4
 
-https://user-images.githubusercontent.com/33844493/214108858-3b51a644-e1c5-4f58-9844-c871dc71bc4e.mp4
+https://user-images.githubusercontent.com/33844493/214150408-9cf50e90-2c12-432f-b0d0-1ab1aa1707e3.mp4
+
+https://user-images.githubusercontent.com/33844493/214150670-92f20414-7fcd-4a9a-94ea-b0f1fc5f895a.mp4
+
+
+
 
 ## Technical Details:
 - Combines Unity XR and the Unity's Universal Render Pipeline (URP) to utilize stencil masks.
-- Objects exist within different interactable layers, and moving them between boundaries changes their layer.
+- Objects exist within different physical and rendering layers, and moving them between boundaries changes their layer.
 
 ## Limitations:
 - Shadows are not masked to a layer, since shadows are calculated prior to masking. This means that shadows casted by objects on a different layer are still visible. In the demo, I have disabled shadows on objects that can be picked up. 
